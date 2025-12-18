@@ -6,7 +6,7 @@ paste in the code below and press enter
 
 ```javscript
   console.log("Injecting")
-  const INJECT_URL = "https://raw.githubusercontent.com/meowseal/deobfuscated-ponytown-bootstrapjs/refs/heads/main/bootstrap.js";
+  const INJECT_URL = "https://raw.githubusercontent.com/meowseal/deobfuscated-ponytown-bootstrapjs/refs/heads/main/bootstrap-734e029ae3.js";
   
   async function inject(url) {
       if (!url) return;
