@@ -1,6 +1,7 @@
 This is just a simple script to enject it into the console
 we can use tampermonkey to inject JS scripts onto sites
-
+just put this in front of the script and change the name and save it to run it on the site
+there'll be multiple files soon for changing parent directories but for now it doesn't work
 
 ```javscript
     // ==UserScript==
@@ -10,13 +11,5 @@ we can use tampermonkey to inject JS scripts onto sites
     // @grant        GM_xmlhttpRequest
     // ==/UserScript==
     
-    GM_xmlhttpRequest({
-      method: "GET",
-      url: "https://raw.githubusercontent.com/meowseal/deobfuscated-ponytown-bootstrapjs/refs/heads/main/bootstrap-734e029ae3.js",
-      onload(res) {
-        // Monkey-patch before page code runs
-        eval(res.responseText); // allowed in userscript sandbox
-      }
-    });
 
 ```
